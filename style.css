@@ -1,0 +1,111 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.imagem-inicial {
+    text-align: center;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.sessao {
+    display: flex;
+    align-items: flex-start; /* Alinha o texto e o carrossel no topo */
+    padding: 20px;
+    margin-top: 50px;
+
+}
+
+.text {
+    max-width: 400px; /* Largura máxima do texto*/
+    padding-left: 130px;
+}
+.text h1 {
+    margin-top: 5px;
+    font-family: ".dm-serif-text-regular";
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.text p {
+    line-height: 1.6;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #94c8e6;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contato {
+    display: flex;
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "DM Serif Text", serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #007BFF; /* Adicionado para cor de fundo */
+    margin-left: 50px;
+}
+
+
+
+/* aonde começa o carrosel*/
+
+.carousel {
+    position: relative;
+    margin-left: 20%;
+    margin-top: 0px;
+    max-width: 500px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+
+/*termina o carrosel*/

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeticaPetShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <img class="imagem-inicial" src="imagem/Imagem do WhatsApp de 2024-08-21 à(s) 10.35.01_4e41a656.jpg" alt="foto de cachorro">
+        </div>
+    </header>
+    
+    <!-- Início do carrossel -->
+    <div class="sessao">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="imagem/Imagem do WhatsApp de 2024-08-21 à(s) 10.39.39_8735758d.jpg" alt="Imagem 1">
+                <img src="imagem/Imagem do WhatsApp de 2024-08-21 à(s) 10.39.39_2f3a8e38.jpg" alt="Imagem 2">
+                <img src="imagem/Imagem do WhatsApp de 2024-08-21 à(s) 10.39.39_4031d720.jpg" alt="Imagem 3">
+                <img src="imagem/Imagem do WhatsApp de 2024-08-21 à(s) 10.39.40_39a1f34a.jpg" alt="Imagem 4">
+                <img src="imagem/Imagem do WhatsApp de 2024-08-21 à(s) 10.39.40_564305eb.jpg" alt="Imagem 5">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        
+        <div class="text">
+            <h1>Banho e Tosa</h1>
+            <p>Espaço planejado, totalmente diferenciado com equipamentos modernos e ambiente climatizado.</p>
+            <p>Equipe qualificada e que ama o que faz.</p>
+            <p>Tratamento individualizado para cada raça e tipos de pelagem.</p>
+            <p>Serviço de leva e traz com motorista e veículo adaptado pensado na segurança e bem-estar dos pets.</p>
+        </div>
+    </div>
+    <!-- Fim do carrossel -->
+
+    <footer>
+        <div class="container">
+            <h1>Contato</h1>
+            <a href="https://www.instagram.com/peticapetshop?igsh=dTR6bGo0a3oyMW5x" target="_blank" class="contato">@peticapetshop</a> 
+            <a href="https://api.whatsapp.com/send?phone=554799182679&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20voc%C3%AAs" target="_blank" class="contato">+55 47 9918-267</a>
+            <a href="https://maps.app.goo.gl/5gBNtWSrDxk5eFTP8" target="_blank" class="contato">R. Ipê, 210 - Tabuleiro, Camboriú - SC, 88348-222</a>
+        </div>
+        <div class="mapa1"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.8584853139737!2d-48.65241149999999!3d-27.003026000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b5cfe308f5d9%3A0x7d3449a1b5d6a860!2sPeticapetshop!5e0!3m2!1spt-BR!2sbr!4v1724256936617!5m2!1spt-BR!2sbr" class="mapa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+    <!-- Botão do WhatsApp -->
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=554799182679&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20voc%C3%AAs">
+        <div class="rwb-tooltip">Fale conosco!</div>
+        <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg" alt="Ícone do WhatsApp">
+    </a>
+
+    <!-- Script para o carrossel -->
+    <script src="script.js"></script>
+</body>
+</html>
